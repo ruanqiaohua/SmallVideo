@@ -1,0 +1,824 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F119D56A1E0136B300E5B388 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F119D5691E0136B300E5B388 /* main.m */; };
+		F119D56D1E0136B300E5B388 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F119D56C1E0136B300E5B388 /* AppDelegate.m */; };
+		F119D5701E0136B300E5B388 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F119D56F1E0136B300E5B388 /* ViewController.m */; };
+		F119D5731E0136B300E5B388 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F119D5711E0136B300E5B388 /* Main.storyboard */; };
+		F119D5751E0136B300E5B388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F119D5741E0136B300E5B388 /* Assets.xcassets */; };
+		F119D5781E0136B300E5B388 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F119D5761E0136B300E5B388 /* LaunchScreen.storyboard */; };
+		F119D5831E0136B300E5B388 /* SmallVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F119D5821E0136B300E5B388 /* SmallVideoTests.m */; };
+		F119D58E1E0136B300E5B388 /* SmallVideoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F119D58D1E0136B300E5B388 /* SmallVideoUITests.m */; };
+		F119D5931E0136B300E5B388 /* SmallVideo WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F119D5921E0136B300E5B388 /* SmallVideo WatchKit App.app */; };
+		F119D5991E0136B300E5B388 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F119D5971E0136B300E5B388 /* Interface.storyboard */; };
+		F119D59B1E0136B300E5B388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F119D59A1E0136B300E5B388 /* Assets.xcassets */; };
+		F119D5A21E0136B400E5B388 /* SmallVideo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F119D5A11E0136B400E5B388 /* SmallVideo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F119D5AA1E0136B400E5B388 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F119D5A91E0136B400E5B388 /* InterfaceController.m */; };
+		F119D5AD1E0136B400E5B388 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F119D5AC1E0136B400E5B388 /* ExtensionDelegate.m */; };
+		F119D5B01E0136B400E5B388 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F119D5AF1E0136B400E5B388 /* NotificationController.m */; };
+		F119D5B31E0136B400E5B388 /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F119D5B21E0136B400E5B388 /* ComplicationController.m */; };
+		F119D5B51E0136B400E5B388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F119D5B41E0136B400E5B388 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F119D57F1E0136B300E5B388 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F119D55D1E0136B300E5B388 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F119D5641E0136B300E5B388;
+			remoteInfo = SmallVideo;
+		};
+		F119D58A1E0136B300E5B388 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F119D55D1E0136B300E5B388 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F119D5641E0136B300E5B388;
+			remoteInfo = SmallVideo;
+		};
+		F119D5941E0136B300E5B388 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F119D55D1E0136B300E5B388 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F119D5911E0136B300E5B388;
+			remoteInfo = "SmallVideo WatchKit App";
+		};
+		F119D5A31E0136B400E5B388 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F119D55D1E0136B300E5B388 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F119D5A01E0136B400E5B388;
+			remoteInfo = "SmallVideo WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F119D5BC1E0136B400E5B388 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F119D5A21E0136B400E5B388 /* SmallVideo WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F119D5C01E0136B400E5B388 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F119D5931E0136B300E5B388 /* SmallVideo WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F119D5651E0136B300E5B388 /* SmallVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmallVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F119D5691E0136B300E5B388 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F119D56B1E0136B300E5B388 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F119D56C1E0136B300E5B388 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F119D56E1E0136B300E5B388 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F119D56F1E0136B300E5B388 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F119D5721E0136B300E5B388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F119D5741E0136B300E5B388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F119D5771E0136B300E5B388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F119D5791E0136B300E5B388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F119D57E1E0136B300E5B388 /* SmallVideoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmallVideoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F119D5821E0136B300E5B388 /* SmallVideoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmallVideoTests.m; sourceTree = "<group>"; };
+		F119D5841E0136B300E5B388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F119D5891E0136B300E5B388 /* SmallVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmallVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F119D58D1E0136B300E5B388 /* SmallVideoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmallVideoUITests.m; sourceTree = "<group>"; };
+		F119D58F1E0136B300E5B388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F119D5921E0136B300E5B388 /* SmallVideo WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SmallVideo WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F119D5981E0136B300E5B388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F119D59A1E0136B300E5B388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F119D59C1E0136B300E5B388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F119D5A11E0136B400E5B388 /* SmallVideo WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SmallVideo WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F119D5A71E0136B400E5B388 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F119D5A81E0136B400E5B388 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		F119D5A91E0136B400E5B388 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		F119D5AB1E0136B400E5B388 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		F119D5AC1E0136B400E5B388 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		F119D5AE1E0136B400E5B388 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		F119D5AF1E0136B400E5B388 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		F119D5B11E0136B400E5B388 /* ComplicationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplicationController.h; sourceTree = "<group>"; };
+		F119D5B21E0136B400E5B388 /* ComplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
+		F119D5B41E0136B400E5B388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F119D5B61E0136B400E5B388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F119D5621E0136B300E5B388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F119D57B1E0136B300E5B388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F119D5861E0136B300E5B388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F119D59E1E0136B400E5B388 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F119D55C1E0136B300E5B388 = {
+			isa = PBXGroup;
+			children = (
+				F119D5671E0136B300E5B388 /* SmallVideo */,
+				F119D5811E0136B300E5B388 /* SmallVideoTests */,
+				F119D58C1E0136B300E5B388 /* SmallVideoUITests */,
+				F119D5961E0136B300E5B388 /* SmallVideo WatchKit App */,
+				F119D5A51E0136B400E5B388 /* SmallVideo WatchKit Extension */,
+				F119D5661E0136B300E5B388 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F119D5661E0136B300E5B388 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F119D5651E0136B300E5B388 /* SmallVideo.app */,
+				F119D57E1E0136B300E5B388 /* SmallVideoTests.xctest */,
+				F119D5891E0136B300E5B388 /* SmallVideoUITests.xctest */,
+				F119D5921E0136B300E5B388 /* SmallVideo WatchKit App.app */,
+				F119D5A11E0136B400E5B388 /* SmallVideo WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F119D5671E0136B300E5B388 /* SmallVideo */ = {
+			isa = PBXGroup;
+			children = (
+				F119D56B1E0136B300E5B388 /* AppDelegate.h */,
+				F119D56C1E0136B300E5B388 /* AppDelegate.m */,
+				F119D56E1E0136B300E5B388 /* ViewController.h */,
+				F119D56F1E0136B300E5B388 /* ViewController.m */,
+				F119D5711E0136B300E5B388 /* Main.storyboard */,
+				F119D5741E0136B300E5B388 /* Assets.xcassets */,
+				F119D5761E0136B300E5B388 /* LaunchScreen.storyboard */,
+				F119D5791E0136B300E5B388 /* Info.plist */,
+				F119D5681E0136B300E5B388 /* Supporting Files */,
+			);
+			path = SmallVideo;
+			sourceTree = "<group>";
+		};
+		F119D5681E0136B300E5B388 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F119D5691E0136B300E5B388 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F119D5811E0136B300E5B388 /* SmallVideoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F119D5821E0136B300E5B388 /* SmallVideoTests.m */,
+				F119D5841E0136B300E5B388 /* Info.plist */,
+			);
+			path = SmallVideoTests;
+			sourceTree = "<group>";
+		};
+		F119D58C1E0136B300E5B388 /* SmallVideoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F119D58D1E0136B300E5B388 /* SmallVideoUITests.m */,
+				F119D58F1E0136B300E5B388 /* Info.plist */,
+			);
+			path = SmallVideoUITests;
+			sourceTree = "<group>";
+		};
+		F119D5961E0136B300E5B388 /* SmallVideo WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F119D5971E0136B300E5B388 /* Interface.storyboard */,
+				F119D59A1E0136B300E5B388 /* Assets.xcassets */,
+				F119D59C1E0136B300E5B388 /* Info.plist */,
+			);
+			path = "SmallVideo WatchKit App";
+			sourceTree = "<group>";
+		};
+		F119D5A51E0136B400E5B388 /* SmallVideo WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F119D5A81E0136B400E5B388 /* InterfaceController.h */,
+				F119D5A91E0136B400E5B388 /* InterfaceController.m */,
+				F119D5AB1E0136B400E5B388 /* ExtensionDelegate.h */,
+				F119D5AC1E0136B400E5B388 /* ExtensionDelegate.m */,
+				F119D5AE1E0136B400E5B388 /* NotificationController.h */,
+				F119D5AF1E0136B400E5B388 /* NotificationController.m */,
+				F119D5B11E0136B400E5B388 /* ComplicationController.h */,
+				F119D5B21E0136B400E5B388 /* ComplicationController.m */,
+				F119D5B41E0136B400E5B388 /* Assets.xcassets */,
+				F119D5B61E0136B400E5B388 /* Info.plist */,
+				F119D5A61E0136B400E5B388 /* Supporting Files */,
+			);
+			path = "SmallVideo WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F119D5A61E0136B400E5B388 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F119D5A71E0136B400E5B388 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F119D5641E0136B300E5B388 /* SmallVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F119D5C11E0136B400E5B388 /* Build configuration list for PBXNativeTarget "SmallVideo" */;
+			buildPhases = (
+				F119D5611E0136B300E5B388 /* Sources */,
+				F119D5621E0136B300E5B388 /* Frameworks */,
+				F119D5631E0136B300E5B388 /* Resources */,
+				F119D5C01E0136B400E5B388 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F119D5951E0136B300E5B388 /* PBXTargetDependency */,
+			);
+			name = SmallVideo;
+			productName = SmallVideo;
+			productReference = F119D5651E0136B300E5B388 /* SmallVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F119D57D1E0136B300E5B388 /* SmallVideoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F119D5C41E0136B400E5B388 /* Build configuration list for PBXNativeTarget "SmallVideoTests" */;
+			buildPhases = (
+				F119D57A1E0136B300E5B388 /* Sources */,
+				F119D57B1E0136B300E5B388 /* Frameworks */,
+				F119D57C1E0136B300E5B388 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F119D5801E0136B300E5B388 /* PBXTargetDependency */,
+			);
+			name = SmallVideoTests;
+			productName = SmallVideoTests;
+			productReference = F119D57E1E0136B300E5B388 /* SmallVideoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F119D5881E0136B300E5B388 /* SmallVideoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F119D5C71E0136B400E5B388 /* Build configuration list for PBXNativeTarget "SmallVideoUITests" */;
+			buildPhases = (
+				F119D5851E0136B300E5B388 /* Sources */,
+				F119D5861E0136B300E5B388 /* Frameworks */,
+				F119D5871E0136B300E5B388 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F119D58B1E0136B300E5B388 /* PBXTargetDependency */,
+			);
+			name = SmallVideoUITests;
+			productName = SmallVideoUITests;
+			productReference = F119D5891E0136B300E5B388 /* SmallVideoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F119D5911E0136B300E5B388 /* SmallVideo WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F119D5BD1E0136B400E5B388 /* Build configuration list for PBXNativeTarget "SmallVideo WatchKit App" */;
+			buildPhases = (
+				F119D5901E0136B300E5B388 /* Resources */,
+				F119D5BC1E0136B400E5B388 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F119D5A41E0136B400E5B388 /* PBXTargetDependency */,
+			);
+			name = "SmallVideo WatchKit App";
+			productName = "SmallVideo WatchKit App";
+			productReference = F119D5921E0136B300E5B388 /* SmallVideo WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F119D5A01E0136B400E5B388 /* SmallVideo WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F119D5B91E0136B400E5B388 /* Build configuration list for PBXNativeTarget "SmallVideo WatchKit Extension" */;
+			buildPhases = (
+				F119D59D1E0136B400E5B388 /* Sources */,
+				F119D59E1E0136B400E5B388 /* Frameworks */,
+				F119D59F1E0136B400E5B388 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SmallVideo WatchKit Extension";
+			productName = "SmallVideo WatchKit Extension";
+			productReference = F119D5A11E0136B400E5B388 /* SmallVideo WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F119D55D1E0136B300E5B388 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "阮巧华";
+				TargetAttributes = {
+					F119D5641E0136B300E5B388 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 8KNDMU75FD;
+						ProvisioningStyle = Automatic;
+					};
+					F119D57D1E0136B300E5B388 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 8KNDMU75FD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F119D5641E0136B300E5B388;
+					};
+					F119D5881E0136B300E5B388 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 8KNDMU75FD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F119D5641E0136B300E5B388;
+					};
+					F119D5911E0136B300E5B388 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 8KNDMU75FD;
+						ProvisioningStyle = Automatic;
+					};
+					F119D5A01E0136B400E5B388 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 8KNDMU75FD;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F119D5601E0136B300E5B388 /* Build configuration list for PBXProject "SmallVideo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F119D55C1E0136B300E5B388;
+			productRefGroup = F119D5661E0136B300E5B388 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F119D5641E0136B300E5B388 /* SmallVideo */,
+				F119D57D1E0136B300E5B388 /* SmallVideoTests */,
+				F119D5881E0136B300E5B388 /* SmallVideoUITests */,
+				F119D5911E0136B300E5B388 /* SmallVideo WatchKit App */,
+				F119D5A01E0136B400E5B388 /* SmallVideo WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F119D5631E0136B300E5B388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F119D5781E0136B300E5B388 /* LaunchScreen.storyboard in Resources */,
+				F119D5751E0136B300E5B388 /* Assets.xcassets in Resources */,
+				F119D5731E0136B300E5B388 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F119D57C1E0136B300E5B388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F119D5871E0136B300E5B388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F119D5901E0136B300E5B388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F119D59B1E0136B300E5B388 /* Assets.xcassets in Resources */,
+				F119D5991E0136B300E5B388 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F119D59F1E0136B400E5B388 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F119D5B51E0136B400E5B388 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F119D5611E0136B300E5B388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F119D5701E0136B300E5B388 /* ViewController.m in Sources */,
+				F119D56D1E0136B300E5B388 /* AppDelegate.m in Sources */,
+				F119D56A1E0136B300E5B388 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F119D57A1E0136B300E5B388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F119D5831E0136B300E5B388 /* SmallVideoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F119D5851E0136B300E5B388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F119D58E1E0136B300E5B388 /* SmallVideoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F119D59D1E0136B400E5B388 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F119D5AD1E0136B400E5B388 /* ExtensionDelegate.m in Sources */,
+				F119D5B31E0136B400E5B388 /* ComplicationController.m in Sources */,
+				F119D5AA1E0136B400E5B388 /* InterfaceController.m in Sources */,
+				F119D5B01E0136B400E5B388 /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F119D5801E0136B300E5B388 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F119D5641E0136B300E5B388 /* SmallVideo */;
+			targetProxy = F119D57F1E0136B300E5B388 /* PBXContainerItemProxy */;
+		};
+		F119D58B1E0136B300E5B388 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F119D5641E0136B300E5B388 /* SmallVideo */;
+			targetProxy = F119D58A1E0136B300E5B388 /* PBXContainerItemProxy */;
+		};
+		F119D5951E0136B300E5B388 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F119D5911E0136B300E5B388 /* SmallVideo WatchKit App */;
+			targetProxy = F119D5941E0136B300E5B388 /* PBXContainerItemProxy */;
+		};
+		F119D5A41E0136B400E5B388 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F119D5A01E0136B400E5B388 /* SmallVideo WatchKit Extension */;
+			targetProxy = F119D5A31E0136B400E5B388 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F119D5711E0136B300E5B388 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F119D5721E0136B300E5B388 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F119D5761E0136B300E5B388 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F119D5771E0136B300E5B388 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F119D5971E0136B300E5B388 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F119D5981E0136B300E5B388 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F119D5B71E0136B400E5B388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F119D5B81E0136B400E5B388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F119D5BA1E0136B400E5B388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 8KNDMU75FD;
+				INFOPLIST_FILE = "SmallVideo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruanqiaohua.SmallVideo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		F119D5BB1E0136B400E5B388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 8KNDMU75FD;
+				INFOPLIST_FILE = "SmallVideo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruanqiaohua.SmallVideo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		F119D5BE1E0136B400E5B388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8KNDMU75FD;
+				IBSC_MODULE = SmallVideo_WatchKit_Extension;
+				INFOPLIST_FILE = "SmallVideo WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruanqiaohua.SmallVideo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		F119D5BF1E0136B400E5B388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8KNDMU75FD;
+				IBSC_MODULE = SmallVideo_WatchKit_Extension;
+				INFOPLIST_FILE = "SmallVideo WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruanqiaohua.SmallVideo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		F119D5C21E0136B400E5B388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8KNDMU75FD;
+				INFOPLIST_FILE = SmallVideo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruanqiaohua.SmallVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F119D5C31E0136B400E5B388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8KNDMU75FD;
+				INFOPLIST_FILE = SmallVideo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruanqiaohua.SmallVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F119D5C51E0136B400E5B388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8KNDMU75FD;
+				INFOPLIST_FILE = SmallVideoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruanqiaohua.SmallVideoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmallVideo.app/SmallVideo";
+			};
+			name = Debug;
+		};
+		F119D5C61E0136B400E5B388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8KNDMU75FD;
+				INFOPLIST_FILE = SmallVideoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruanqiaohua.SmallVideoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmallVideo.app/SmallVideo";
+			};
+			name = Release;
+		};
+		F119D5C81E0136B400E5B388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8KNDMU75FD;
+				INFOPLIST_FILE = SmallVideoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruanqiaohua.SmallVideoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SmallVideo;
+			};
+			name = Debug;
+		};
+		F119D5C91E0136B400E5B388 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8KNDMU75FD;
+				INFOPLIST_FILE = SmallVideoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruanqiaohua.SmallVideoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SmallVideo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F119D5601E0136B300E5B388 /* Build configuration list for PBXProject "SmallVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F119D5B71E0136B400E5B388 /* Debug */,
+				F119D5B81E0136B400E5B388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F119D5B91E0136B400E5B388 /* Build configuration list for PBXNativeTarget "SmallVideo WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F119D5BA1E0136B400E5B388 /* Debug */,
+				F119D5BB1E0136B400E5B388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F119D5BD1E0136B400E5B388 /* Build configuration list for PBXNativeTarget "SmallVideo WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F119D5BE1E0136B400E5B388 /* Debug */,
+				F119D5BF1E0136B400E5B388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F119D5C11E0136B400E5B388 /* Build configuration list for PBXNativeTarget "SmallVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F119D5C21E0136B400E5B388 /* Debug */,
+				F119D5C31E0136B400E5B388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F119D5C41E0136B400E5B388 /* Build configuration list for PBXNativeTarget "SmallVideoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F119D5C51E0136B400E5B388 /* Debug */,
+				F119D5C61E0136B400E5B388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F119D5C71E0136B400E5B388 /* Build configuration list for PBXNativeTarget "SmallVideoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F119D5C81E0136B400E5B388 /* Debug */,
+				F119D5C91E0136B400E5B388 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F119D55D1E0136B300E5B388 /* Project object */;
+}
