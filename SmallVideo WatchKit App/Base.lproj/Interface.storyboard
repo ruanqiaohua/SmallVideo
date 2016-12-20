@@ -1,16 +1,56 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider=""/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <table alignment="left" id="UTv-oO-94J">
+                            <items>
+                                <tableRow identifier="MovieListRowController" id="692-IZ-X2V" customClass="MovieListRowController">
+                                    <group key="rootItem" width="1" alignment="left" id="TVE-Lf-fkL">
+                                        <items>
+                                            <imageView width="30" height="30" alignment="left" verticalAlignment="center" id="WTD-WX-WDD"/>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="X0O-0J-v0w"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="itemImage" destination="WTD-WX-WDD" id="Ixx-WE-VUK"/>
+                                        <outlet property="itemLabel" destination="X0O-0J-v0w" id="7E2-JM-gTr"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="UTv-oO-94J" id="vJh-If-bcM"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--MovieInterfaceController-->
+        <scene sceneID="3Yz-k7-Mz8">
+            <objects>
+                <controller identifier="MovieInterfaceController" id="Dcv-fF-cka" customClass="MovieInterfaceController">
+                    <items>
+                        <movie width="1" height="1" alignment="left" verticalAlignment="center" id="fJa-Lr-jmP"/>
+                    </items>
+                    <connections>
+                        <outlet property="movie" destination="fJa-Lr-jmP" id="Q8u-tV-W70"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="468" y="350"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -31,7 +71,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider=""/>
+                <controller id="4sK-HA-Art" customClass="NotificationController"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>

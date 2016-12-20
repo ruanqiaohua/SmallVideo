@@ -24,6 +24,12 @@
 		F119D5B01E0136B400E5B388 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F119D5AF1E0136B400E5B388 /* NotificationController.m */; };
 		F119D5B31E0136B400E5B388 /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F119D5B21E0136B400E5B388 /* ComplicationController.m */; };
 		F119D5B51E0136B400E5B388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F119D5B41E0136B400E5B388 /* Assets.xcassets */; };
+		F1B8AD351E0289FB006CDD74 /* MovieListRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B8AD341E0289FB006CDD74 /* MovieListRowController.m */; };
+		F1B8AD391E028CDD006CDD74 /* mov_bbb.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F1B8AD371E028CDD006CDD74 /* mov_bbb.mp4 */; };
+		F1B8AD3A1E028CDD006CDD74 /* poster.png in Resources */ = {isa = PBXBuildFile; fileRef = F1B8AD381E028CDD006CDD74 /* poster.png */; };
+		F1B8AD3D1E02986A006CDD74 /* MovieInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B8AD3C1E02986A006CDD74 /* MovieInterfaceController.m */; };
+		F1B8AD3F1E029965006CDD74 /* mov_bbb.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F1B8AD371E028CDD006CDD74 /* mov_bbb.mp4 */; };
+		F1B8AD431E029AB7006CDD74 /* MovieListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B8AD421E029AB7006CDD74 /* MovieListModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +121,14 @@
 		F119D5B21E0136B400E5B388 /* ComplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
 		F119D5B41E0136B400E5B388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F119D5B61E0136B400E5B388 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1B8AD331E0289FB006CDD74 /* MovieListRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListRowController.h; sourceTree = "<group>"; };
+		F1B8AD341E0289FB006CDD74 /* MovieListRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListRowController.m; sourceTree = "<group>"; };
+		F1B8AD371E028CDD006CDD74 /* mov_bbb.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mov_bbb.mp4; sourceTree = "<group>"; };
+		F1B8AD381E028CDD006CDD74 /* poster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poster.png; sourceTree = "<group>"; };
+		F1B8AD3B1E02986A006CDD74 /* MovieInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieInterfaceController.h; sourceTree = "<group>"; };
+		F1B8AD3C1E02986A006CDD74 /* MovieInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieInterfaceController.m; sourceTree = "<group>"; };
+		F1B8AD411E029AB7006CDD74 /* MovieListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListModel.h; sourceTree = "<group>"; };
+		F1B8AD421E029AB7006CDD74 /* MovieListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +235,7 @@
 				F119D5971E0136B300E5B388 /* Interface.storyboard */,
 				F119D59A1E0136B300E5B388 /* Assets.xcassets */,
 				F119D59C1E0136B300E5B388 /* Info.plist */,
+				F1B8AD361E028CB2006CDD74 /* Resource */,
 			);
 			path = "SmallVideo WatchKit App";
 			sourceTree = "<group>";
@@ -228,6 +243,7 @@
 		F119D5A51E0136B400E5B388 /* SmallVideo WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F1B1C9E61E026D1600690A05 /* Movie */,
 				F119D5A81E0136B400E5B388 /* InterfaceController.h */,
 				F119D5A91E0136B400E5B388 /* InterfaceController.m */,
 				F119D5AB1E0136B400E5B388 /* ExtensionDelegate.h */,
@@ -249,6 +265,44 @@
 				F119D5A71E0136B400E5B388 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F1B1C9E61E026D1600690A05 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				F1B8AD401E029AA1006CDD74 /* Model */,
+				F1B8AD441E02A933006CDD74 /* ViewController */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		F1B8AD361E028CB2006CDD74 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F1B8AD371E028CDD006CDD74 /* mov_bbb.mp4 */,
+				F1B8AD381E028CDD006CDD74 /* poster.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F1B8AD401E029AA1006CDD74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1B8AD411E029AB7006CDD74 /* MovieListModel.h */,
+				F1B8AD421E029AB7006CDD74 /* MovieListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1B8AD441E02A933006CDD74 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F1B8AD331E0289FB006CDD74 /* MovieListRowController.h */,
+				F1B8AD341E0289FB006CDD74 /* MovieListRowController.m */,
+				F1B8AD3B1E02986A006CDD74 /* MovieInterfaceController.h */,
+				F1B8AD3C1E02986A006CDD74 /* MovieInterfaceController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,6 +487,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F119D59B1E0136B300E5B388 /* Assets.xcassets in Resources */,
+				F1B8AD391E028CDD006CDD74 /* mov_bbb.mp4 in Resources */,
+				F1B8AD3A1E028CDD006CDD74 /* poster.png in Resources */,
 				F119D5991E0136B300E5B388 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F119D5B51E0136B400E5B388 /* Assets.xcassets in Resources */,
+				F1B8AD3F1E029965006CDD74 /* mov_bbb.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,8 +536,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F119D5AD1E0136B400E5B388 /* ExtensionDelegate.m in Sources */,
+				F1B8AD351E0289FB006CDD74 /* MovieListRowController.m in Sources */,
+				F1B8AD431E029AB7006CDD74 /* MovieListModel.m in Sources */,
 				F119D5B31E0136B400E5B388 /* ComplicationController.m in Sources */,
 				F119D5AA1E0136B400E5B388 /* InterfaceController.m in Sources */,
+				F1B8AD3D1E02986A006CDD74 /* MovieInterfaceController.m in Sources */,
 				F119D5B01E0136B400E5B388 /* NotificationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -785,6 +845,7 @@
 				F119D5BB1E0136B400E5B388 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F119D5BD1E0136B400E5B388 /* Build configuration list for PBXNativeTarget "SmallVideo WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -793,6 +854,7 @@
 				F119D5BF1E0136B400E5B388 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F119D5C11E0136B400E5B388 /* Build configuration list for PBXNativeTarget "SmallVideo" */ = {
 			isa = XCConfigurationList;
@@ -801,6 +863,7 @@
 				F119D5C31E0136B400E5B388 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F119D5C41E0136B400E5B388 /* Build configuration list for PBXNativeTarget "SmallVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -809,6 +872,7 @@
 				F119D5C61E0136B400E5B388 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F119D5C71E0136B400E5B388 /* Build configuration list for PBXNativeTarget "SmallVideoUITests" */ = {
 			isa = XCConfigurationList;
@@ -817,6 +881,7 @@
 				F119D5C91E0136B400E5B388 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
